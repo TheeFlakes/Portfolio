@@ -3,13 +3,15 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { defineConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 
-export default defineConfig({
-  plugins: [sveltekit()],
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
   kit: {
     adapter: adapter(),
     prerender: {
-      handleMissingId: 'warn'
+      handleMissingId: 'ignore'
     }
   },
   preprocess: vitePreprocess()
-});
+};
+
+export default config;
