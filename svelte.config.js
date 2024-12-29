@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { defineConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
@@ -7,14 +7,15 @@ import { sveltekit } from '@sveltejs/kit/vite';
 const config = {
   kit: {
     adapter: adapter({
-      pages: '.svelte-kit/output',
-      assets: '.svelte-kit/output',
+      pages: 'build',
+      assets: 'build',
       fallback: 'index.html',
       precompress: false,
       strict: true
     }),
     prerender: {
-      handleMissingId: 'ignore'
+      handleMissingId: 'ignore',
+      entries: ['*']
     }
   },
   preprocess: vitePreprocess()
