@@ -6,7 +6,13 @@ import { sveltekit } from '@sveltejs/kit/vite';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      pages: '.svelte-kit/output',
+      assets: '.svelte-kit/output',
+      fallback: 'index.html',
+      precompress: false,
+      strict: true
+    }),
     prerender: {
       handleMissingId: 'ignore'
     }

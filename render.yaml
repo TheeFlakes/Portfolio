@@ -4,6 +4,7 @@ services:
     env: node
     buildCommand: node --max-old-space-size=2048 $(which npm) run install-deps && npm run build
     startCommand: node build
+    publishDirectory: .svelte-kit/output
     envVars:
       - key: NODE_VERSION
         value: 18.x
