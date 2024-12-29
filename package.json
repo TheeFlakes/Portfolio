@@ -4,6 +4,121 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		Search
+		
+		Live tail
+		GMT+3
+		
+		
+		==> Cloning from https://github.com/TheeFlakes/Portfolio
+		==> Checking out commit 618509824c8b24a82bc213abb7efdbef03135280 in branch main
+		==> Installing dependencies with npm...
+		==> Using Node.js version 22.12.0 (default)
+		==> Docs on specifying a Node.js version: https://render.com/docs/node-version
+		==> Using Bun version 1.1.0 (default)
+		==> Docs on specifying a bun version: https://render.com/docs/bun-version
+		added 281 packages, and audited 282 packages in 13s
+		78 packages are looking for funding
+		  run `npm fund` for details
+		3 low severity vulnerabilities
+		To address all issues (including breaking changes), run:
+		  npm audit fix --force
+		Run `npm audit` for details.
+		up to date, audited 282 packages in 3s
+		78 packages are looking for funding
+		  run `npm fund` for details
+		3 low severity vulnerabilities
+		To address all issues (including breaking changes), run:
+		  npm audit fix --force
+		Run `npm audit` for details.
+		==> Running build command 'npm install; npm run build'...
+		up to date, audited 282 packages in 3s
+		78 packages are looking for funding
+		  run `npm fund` for details
+		3 low severity vulnerabilities
+		To address all issues (including breaking changes), run:
+		  npm audit fix --force
+		Run `npm audit` for details.
+		> portfolio@0.0.1 build
+		> vite build
+		vite v5.4.11 building SSR bundle for production...
+		transforming...
+		7:00:23 AM [vite-plugin-svelte] src/lib/components/home.svelte:15:6 Screenreaders already announce `<img>` elements as an image
+		https://svelte.dev/e/a11y_img_redundant_alt
+		13:     <div class="w-full relative">
+		14:       <!-- Rotating image with shadow effect -->
+		15:       <img class="shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto" src="/denis.jpg" alt="Description of the rotating image" />
+																																																								^
+		16:       <!-- Static image with outline effect -->
+		17:       <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30" src="/denis.jpg" alt="Description of the static image" />
+		7:00:23 AM [vite-plugin-svelte] src/lib/components/home.svelte:17:6 Screenreaders already announce `<img>` elements as an image
+		https://svelte.dev/e/a11y_img_redundant_alt
+		15:       <img class="shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto" src="/denis.jpg" alt="Description of the rotating image" />
+		16:       <!-- Static image with outline effect -->
+		17:       <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30" src="/denis.jpg" alt="Description of the static image" />
+																																																						 ^
+		18:     </div>
+		19:     <div class="w-full flex flex-col justify-center gap-4 md:text-left text-center text-white dark:text-gray-800 md:mt-0 sm:mt-8 mt-4">
+		✓ 175 modules transformed.
+		rendering chunks...
+		vite v5.4.11 building for production...
+		transforming...
+		7:00:26 AM [vite-plugin-svelte] src/lib/components/home.svelte:15:6 Screenreaders already announce `<img>` elements as an image
+		https://svelte.dev/e/a11y_img_redundant_alt
+		13:     <div class="w-full relative">
+		14:       <!-- Rotating image with shadow effect -->
+		15:       <img class="shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto" src="/denis.jpg" alt="Description of the rotating image" />
+																																																								^
+		16:       <!-- Static image with outline effect -->
+		17:       <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30" src="/denis.jpg" alt="Description of the static image" />
+		7:00:26 AM [vite-plugin-svelte] src/lib/components/home.svelte:17:6 Screenreaders already announce `<img>` elements as an image
+		https://svelte.dev/e/a11y_img_redundant_alt
+		15:       <img class="shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto" src="/denis.jpg" alt="Description of the rotating image" />
+		16:       <!-- Static image with outline effect -->
+		17:       <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30" src="/denis.jpg" alt="Description of the static image" />
+																																																						 ^
+		18:     </div>
+		19:     <div class="w-full flex flex-col justify-center gap-4 md:text-left text-center text-white dark:text-gray-800 md:mt-0 sm:mt-8 mt-4">
+		✓ 142 modules transformed.
+		rendering chunks...
+		computing gzip size...
+		.svelte-kit/output/client/_app/version.json                                    0.03 kB │ gzip:  0.05 kB
+		.svelte-kit/output/client/.vite/manifest.json                                  3.85 kB │ gzip:  0.67 kB
+		.svelte-kit/output/client/_app/immutable/assets/0.D8wRomuS.css                13.50 kB │ gzip:  3.35 kB
+		.svelte-kit/output/client/_app/immutable/chunks/legacy.BVWgLHVI.js             0.05 kB │ gzip:  0.07 kB
+		.svelte-kit/output/client/_app/immutable/entry/start.CVrnY8BD.js               0.07 kB │ gzip:  0.08 kB
+		.svelte-kit/output/client/_app/immutable/chunks/index-client.CuZf6jQ3.js       0.33 kB │ gzip:  0.26 kB
+		.svelte-kit/output/client/_app/immutable/nodes/0.DDn72QfN.js                   0.38 kB │ gzip:  0.29 kB
+		.svelte-kit/output/client/_app/immutable/chunks/if.BK5ItqQq.js                 0.49 kB │ gzip:  0.34 kB
+		.svelte-kit/output/client/_app/immutable/chunks/lifecycle.BT-w1SAi.js          0.53 kB │ gzip:  0.33 kB
+		.svelte-kit/output/client/_app/immutable/nodes/1.DFM20A3C.js                   0.84 kB │ gzip:  0.47 kB
+		.svelte-kit/output/client/_app/immutable/chunks/disclose-version.BMUScPTX.js   0.98 kB │ gzip:  0.56 kB
+		.svelte-kit/output/client/_app/immutable/chunks/svelte-head.BGsI9Bk8.js        1.71 kB │ gzip:  0.97 kB
+		.svelte-kit/output/client/_app/immutable/chunks/render.BCWSiDXa.js             1.73 kB │ gzip:  0.98 kB
+		.svelte-kit/output/client/_app/immutable/entry/app.k3nw7bHJ.js                 9.37 kB │ gzip:  4.27 kB
+		.svelte-kit/output/client/_app/immutable/chunks/runtime.Bp12OnD1.js           12.58 kB │ gzip:  5.07 kB
+		.svelte-kit/output/client/_app/immutable/nodes/2.BZITYOyg.js                  12.86 kB │ gzip:  4.34 kB
+		.svelte-kit/output/client/_app/immutable/chunks/entry.DV082N7M.js             31.32 kB │ gzip: 12.24 kB
+		✓ built in 1.09s
+		.svelte-kit/output/server/.vite/manifest.json                           1.81 kB
+		.svelte-kit/output/server/_app/immutable/assets/_layout.D8wRomuS.css   13.50 kB
+		.svelte-kit/output/server/entries/pages/_layout.svelte.js               0.23 kB
+		.svelte-kit/output/server/internal.js                                   0.31 kB
+		.svelte-kit/output/server/chunks/equality.js                            0.61 kB
+		.svelte-kit/output/server/chunks/index.js                               2.73 kB
+		.svelte-kit/output/server/entries/fallbacks/error.svelte.js             3.10 kB
+		.svelte-kit/output/server/chunks/exports.js                             7.54 kB
+		.svelte-kit/output/server/entries/pages/_page.svelte.js                11.31 kB
+		.svelte-kit/output/server/chunks/internal.js                           42.10 kB
+		.svelte-kit/output/server/index.js                                    120.51 kB
+		✓ built in 5.27s
+		Run npm run preview to preview your production build locally.
+		> Using @sveltejs/adapter-auto
+		  Could not detect a supported production environment. See https://svelte.dev/docs/kit/adapters to learn how to configure your app to run on the platform of your choosing
+		  ✔ done
+		==> Publish directory npm run dev does not exist!
+		==> Build failed 😞
+		==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",

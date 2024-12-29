@@ -12,9 +12,9 @@
   <div class="min-h-screen w-full mx-auto relative top-24 pb-20 xl:px-16 px-8 flex md:flex-row flex-col gap-4 justify-center items-center pb-10 pt-4">
     <div class="w-full relative">
       <!-- Rotating image with shadow effect -->
-      <img class="shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto" src="/denis.jpg" alt="Description of the rotating image" />
+      <img class="shadow-2xl shadow-rose-600 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto" src="/denis.jpg" alt="" />
       <!-- Static image with outline effect -->
-      <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30" src="/denis.jpg" alt="Description of the static image" />
+      <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-rose-400/30" src="/denis.jpg" alt="" />
     </div>
     <div class="w-full flex flex-col justify-center gap-4 md:text-left text-center text-white dark:text-gray-800 md:mt-0 sm:mt-8 mt-4">
       <!-- Introduction heading -->
