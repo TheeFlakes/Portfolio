@@ -2,10 +2,12 @@ services:
   - type: web
     name: portfolio
     env: node
-    buildCommand: npm ci && npm run build
+    buildCommand: node --max-old-space-size=2048 $(which npm) run install-deps && npm run build
     startCommand: node build
     envVars:
       - key: NODE_VERSION
         value: 18.x
       - key: NODE_ENV
-        value: production 
+        value: production
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=2048 
