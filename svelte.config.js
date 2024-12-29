@@ -5,7 +5,10 @@ const config = {
   kit: {
     adapter: adapter({
       strict: false
-    })
+    }),
+    prerender: {
+      handleMissingId: 'warn'
+    }
   },
   preprocess: vitePreprocess()
 };
