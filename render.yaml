@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: portfolio
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node build
+    envVars:
+      - key: NODE_VERSION
+        value: 18.x
+      - key: NODE_ENV
+        value: production 
