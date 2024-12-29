@@ -3,8 +3,8 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { defineConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default defineConfig({
+  plugins: [sveltekit()],
   kit: {
     adapter: adapter(),
     prerender: {
@@ -12,6 +12,4 @@ const config = {
     }
   },
   preprocess: vitePreprocess()
-};
-
-export default config;
+});
