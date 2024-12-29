@@ -10,9 +10,11 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
+		"preinstall": "npm cache clean --force",
+		"install": "NODE_ENV=production npm ci --prefer-offline --no-audit",
+		"postinstall": "npm run build",
 		"clean": "npm cache clean --force",
-		"setup": "NODE_ENV=production npm ci --prefer-offline --no-audit",
-		"postinstall": "NODE_ENV=production node --max-old-space-size=3072 node_modules/@sveltejs/kit/postinstall.js"
+		"prepare": "npm ci --prefer-offline --no-audit"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.3",
