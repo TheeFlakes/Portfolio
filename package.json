@@ -4,15 +4,15 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "NODE_OPTIONS='--max-old-space-size=4096' vite build",
+		"build": "NODE_ENV=production NODE_OPTIONS='--max-old-space-size=3072' vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"preinstall": "export NODE_OPTIONS='--max-old-space-size=4096'",
-		"install": "npm install --no-save",
-		"postinstall": "NODE_OPTIONS='--max-old-space-size=4096' node node_modules/@sveltejs/kit/postinstall.js"
+		"preinstall": "npm cache clean --force",
+		"install": "NODE_ENV=production npm ci --prefer-offline --no-audit",
+		"postinstall": "NODE_ENV=production node --max-old-space-size=3072 node_modules/@sveltejs/kit/postinstall.js"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.3",
@@ -37,5 +37,8 @@
 	"dependencies": {
 		"pocketbase": "^0.22.1",
 		"sirv": "^3.0.0"
+	},
+	"engines": {
+		"node": "18.x"
 	}
 }
